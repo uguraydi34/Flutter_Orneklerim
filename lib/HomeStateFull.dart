@@ -39,10 +39,9 @@ class _HomeViewStateFullState extends State<HomeViewStateFull> {
         children: [
           _yuklendimi ? CircularProgressIndicator() : FlutterLogo(),
           AnimatedOpacity(
-            opacity: _yuklendimi ? 0 : 1,
-            duration: Duration(seconds: 1),
-            child: Image.network(imageManager.randomImage),
-          ),
+              opacity: _yuklendimi ? 0 : 1,
+              duration: Duration(seconds: 1),
+              child: Image.network(imageManager.randomImage)),
         ],
       ),
     );
